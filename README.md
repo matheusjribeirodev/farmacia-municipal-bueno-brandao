@@ -1,73 +1,95 @@
-# Welcome to your Lovable project
+# 🏥 Farmácia Municipal de Bueno Brandão
 
-## Project info
+Sistema web para consulta de medicamentos disponíveis na Farmácia Municipal de Bueno Brandão, parte da **Rede Farmácia de Minas**.
 
-**URL**: https://lovable.dev/projects/f69998f1-e215-4bc0-99c4-6e0ee6eda8de
+![Farmácia Municipal](public/lovable-uploads/29c5f3c9-b602-46ac-86c4-102485a3f245.png)
 
-## How can I edit this code?
+## 📋 Sobre o Projeto
 
-There are several ways of editing your application.
+Este sistema permite aos cidadãos consultar rapidamente a disponibilidade de medicamentos na farmácia municipal, oferecendo uma interface moderna e intuitiva para facilitar o acesso à informação.
 
-**Use Lovable**
+### ✨ Funcionalidades
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f69998f1-e215-4bc0-99c4-6e0ee6eda8de) and start prompting.
+- 🔍 **Busca inteligente** com sugestões automáticas
+- 📱 **Design responsivo** para desktop e mobile
+- 📊 **Visualização em cards ou tabela**
+- 📄 **Geração de PDF** com lista completa de medicamentos
+- 💬 **Contato direto** via WhatsApp
+- 🏷️ **Status em tempo real** dos medicamentos (Disponível, Recém-chegado, Em falta)
 
-Changes made via Lovable will be committed automatically to this repo.
+### 📊 Dados
 
-**Use your preferred IDE**
+- **1.547 medicamentos** catalogados
+- **Informações atualizadas** a cada 15 dias
+- **Categorias organizadas** por tipo de medicamento
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🛠️ Tecnologias Utilizadas
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Frontend**: React 18.3.1 + TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS + shadcn/ui
+- **Roteamento**: React Router Dom
+- **Ícones**: Lucide React
+- **PDF**: jsPDF + jsPDF-AutoTable
 
-Follow these steps:
+## 🚀 Como Executar
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Pré-requisitos
+- Node.js (versão 18 ou superior)
+- npm ou yarn
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Instalação
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+1. Clone o repositório:
+```bash
+git clone https://github.com/SEU_USUARIO/farmacia-municipal-bueno-brandao.git
+cd farmacia-municipal-bueno-brandao
 ```
 
-**Edit a file directly in GitHub**
+2. Instale as dependências:
+```bash
+npm install
+# ou
+yarn install
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+3. Execute o projeto:
+```bash
+npm run dev
+# ou
+yarn dev
+```
 
-**Use GitHub Codespaces**
+4. Acesse no navegador: `http://localhost:5173`
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Build para Produção
 
-## What technologies are used for this project?
+```bash
+npm run build
+# ou
+yarn build
+```
 
-This project is built with:
+## 📱 Páginas do Sistema
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- **🏠 Início** (`/`) - Busca rápida e informações gerais
+- **💊 Lista Completa** (`/medicamentos`) - Todos os medicamentos com filtros
+- **ℹ️ Sobre** (`/sobre`) - Informações sobre a farmácia
 
-## How can I deploy this project?
+## 📞 Contato
 
-Simply open [Lovable](https://lovable.dev/projects/f69998f1-e215-4bc0-99c4-6e0ee6eda8de) and click on Share -> Publish.
+- **WhatsApp**: (35) 99814-1693
+- **Endereço**: Farmácia Municipal de Bueno Brandão
+- **Rede**: Farmácia de Minas
 
-## Can I connect a custom domain to my Lovable project?
+## 🤝 Contribuição
 
-Yes, you can!
+Este é um projeto público para benefício da comunidade de Bueno Brandão. Sugestões e melhorias são sempre bem-vindas!
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 📄 Licença
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+**Desenvolvido para a comunidade de Bueno Brandão** 💚
