@@ -56,13 +56,14 @@ const Home = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
           <Link
             to="/medicamentos"
-            className="px-8 py-3 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors font-medium flex items-center justify-center space-x-2"
+            className="px-4 sm:px-8 py-3 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors font-medium flex items-center justify-center space-x-2 text-sm sm:text-base"
           >
-            <Search size={20} />
-            <span>Ver Lista Completa de Medicamentos Disponíveis</span>
+            <Search size={18} className="sm:w-5 sm:h-5 flex-shrink-0" />
+            <span className="whitespace-nowrap overflow-hidden text-ellipsis">
+              <span className="hidden sm:inline">Ver Lista Completa de Medicamentos Disponíveis</span>
+              <span className="sm:hidden">Lista Completa</span>
+            </span>
           </Link>
-          
-
         </div>
 
         {/* Search Results */}

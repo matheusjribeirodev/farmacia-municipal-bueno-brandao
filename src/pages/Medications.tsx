@@ -38,16 +38,20 @@ const Medications = () => {
       }, [searchQuery, statusFilter, categoryFilter]);
 
   const downloadPDF = () => {
+    // Detectar se é mobile
+    const isMobile = window.innerWidth <= 768;
+    
     // Criar conteúdo HTML para impressão
     const printContent = `
       <!DOCTYPE html>
       <html>
         <head>
           <title>Lista de Medicamentos - Farmácia Municipal de Bueno Brandão</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <style>
             @page {
-              margin: 0.5in;
-              size: A4;
+              margin: ${isMobile ? '0.3in' : '0.5in'};
+              size: ${isMobile ? 'A4 portrait' : 'A4'};
             }
             
             * {
@@ -76,23 +80,23 @@ const Medications = () => {
             
             .main-title {
               color: #047857;
-              font-size: 28px;
+              font-size: ${isMobile ? '24px' : '28px'};
               font-weight: bold;
               margin: 0 0 5px 0;
               text-transform: uppercase;
-              letter-spacing: 1px;
+              letter-spacing: ${isMobile ? '0.5px' : '1px'};
             }
             
             .subtitle {
               color: #6b7280;
-              font-size: 16px;
+              font-size: ${isMobile ? '16px' : '18px'};
               margin: 0 0 8px 0;
               font-weight: 500;
             }
             
             .document-title {
               color: #1f2937;
-              font-size: 20px;
+              font-size: ${isMobile ? '18px' : '20px'};
               font-weight: 600;
               margin: 15px 0 5px 0;
             }
@@ -169,9 +173,9 @@ const Medications = () => {
             th {
               color: white;
               font-weight: 700;
-              padding: 15px 12px;
+              padding: ${isMobile ? '10px 8px' : '15px 12px'};
               text-align: left;
-              font-size: 14px;
+              font-size: ${isMobile ? '12px' : '14px'};
               text-transform: uppercase;
               letter-spacing: 0.5px;
               border: none;
@@ -191,42 +195,47 @@ const Medications = () => {
             }
             
             td {
-              padding: 12px;
-              font-size: 13px;
+              padding: ${isMobile ? '10px 8px' : '12px'};
+              font-size: ${isMobile ? '11px' : '13px'};
               vertical-align: top;
               border: none;
+              word-wrap: break-word;
+              line-height: 1.4;
             }
             
             .med-name {
               font-weight: 600;
               color: #1f2937;
+              font-size: ${isMobile ? '12px' : '14px'};
             }
             
             .med-concentration {
               font-weight: 500;
               color: #4b5563;
+              font-size: ${isMobile ? '11px' : '13px'};
             }
             
             .med-form {
               color: #6b7280;
               font-style: italic;
+              font-size: ${isMobile ? '11px' : '13px'};
             }
             
             .med-category {
               background: #f3f4f6;
-              padding: 4px 8px;
+              padding: ${isMobile ? '3px 6px' : '4px 8px'};
               border-radius: 4px;
-              font-size: 12px;
+              font-size: ${isMobile ? '10px' : '12px'};
               font-weight: 500;
               color: #374151;
               display: inline-block;
             }
             
             .status-badge {
-              padding: 6px 12px;
+              padding: ${isMobile ? '4px 8px' : '6px 12px'};
               border-radius: 20px;
               font-weight: 600;
-              font-size: 12px;
+              font-size: ${isMobile ? '10px' : '12px'};
               text-transform: uppercase;
               letter-spacing: 0.5px;
               display: inline-block;
@@ -266,14 +275,104 @@ const Medications = () => {
               color: #047857;
             }
             
+            /* Estilos específicos para mobile */
+            @media screen and (max-width: 768px) {
+              body {
+                padding: 8px;
+                font-size: 12px;
+              }
+              
+              .document-header {
+                margin-bottom: 15px;
+                padding-bottom: 10px;
+              }
+              
+              .important-info {
+                padding: 12px;
+                margin-bottom: 15px;
+              }
+              
+              .table-container {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+              }
+              
+              table {
+                min-width: 100%;
+                font-size: 11px;
+              }
+              
+              .med-name {
+                font-size: 12px !important;
+                font-weight: 600 !important;
+              }
+              
+              .med-concentration {
+                font-size: 11px !important;
+              }
+              
+              .med-form {
+                font-size: 11px !important;
+              }
+              
+              .med-category {
+                font-size: 10px !important;
+                padding: 2px 4px !important;
+              }
+              
+              .status-badge {
+                padding: 3px 6px !important;
+                font-size: 9px !important;
+              }
+            }
+            
             @media print {
               body { 
                 -webkit-print-color-adjust: exact;
                 print-color-adjust: exact;
+                font-size: ${isMobile ? '11px' : '13px'};
               }
               
               .table-container {
                 box-shadow: none;
+                overflow: visible;
+              }
+              
+              table {
+                font-size: ${isMobile ? '10px' : '12px'};
+              }
+              
+              th {
+                font-size: ${isMobile ? '9px' : '11px'} !important;
+                padding: ${isMobile ? '6px 4px' : '8px 6px'} !important;
+              }
+              
+              td {
+                font-size: ${isMobile ? '9px' : '11px'} !important;
+                padding: ${isMobile ? '6px 4px' : '8px 6px'} !important;
+              }
+              
+              .med-name {
+                font-size: ${isMobile ? '10px' : '12px'} !important;
+                font-weight: 600 !important;
+              }
+              
+              .med-concentration {
+                font-size: ${isMobile ? '9px' : '11px'} !important;
+              }
+              
+              .med-form {
+                font-size: ${isMobile ? '9px' : '11px'} !important;
+              }
+              
+              .med-category {
+                font-size: ${isMobile ? '8px' : '10px'} !important;
+                padding: ${isMobile ? '2px 3px' : '3px 5px'} !important;
+              }
+              
+              .status-badge {
+                font-size: ${isMobile ? '8px' : '10px'} !important;
+                padding: ${isMobile ? '2px 4px' : '3px 6px'} !important;
               }
               
               tbody tr:hover {
@@ -479,11 +578,11 @@ const Medications = () => {
             <div className="col-span-1 sm:col-span-2 flex items-end">
               <button
                 onClick={downloadPDF}
-                className="w-full px-4 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors font-medium flex items-center justify-center space-x-2 text-sm sm:text-base"
+                className="w-full px-3 sm:px-4 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors font-medium flex items-center justify-center space-x-2 text-xs sm:text-base"
               >
-                <Download size={18} />
+                <Download size={16} className="sm:w-[18px] sm:h-[18px]" />
                 <span className="hidden sm:inline">Imprimir Lista (PDF)</span>
-                <span className="sm:hidden">PDF</span>
+                <span className="sm:hidden">Lista PDF</span>
               </button>
             </div>
 
