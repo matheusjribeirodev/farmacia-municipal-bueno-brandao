@@ -242,9 +242,9 @@ const Medications = () => {
             }
             
             .status-disponivel {
-              background: #d1fae5;
-              color: #065f46;
-              border: 1px solid #10b981;
+              background: #f1f5f9;
+              color: #334155;
+              border: 1px solid #64748b;
             }
             
             .status-recem-chegado {

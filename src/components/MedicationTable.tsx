@@ -37,7 +37,7 @@ const MedicationTable = ({ medications }: MedicationTableProps) => {
   const getStatusBadgeVariant = (status: string) => {
     switch (status) {
       case 'Disponível':
-        return 'default';
+        return 'outline';
       case 'Recém-chegado':
         return 'secondary';
       case 'Em falta':

@@ -9,7 +9,7 @@ const MedicationCard = ({ medication }: MedicationCardProps) => {
   const getStatusStyle = (status: string) => {
     switch (status) {
       case 'Disponível':
-        return 'bg-emerald-100 text-emerald-700';
+        return 'bg-slate-100 text-slate-700';
       case 'Recém-chegado':
         return 'bg-green-100 text-green-700';
       case 'Em falta':
