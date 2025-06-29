@@ -8,7 +8,7 @@ export const medications: Medication[] = [
     name: 'Acebrofilina',
     concentration: '10mg/ml',
     form: 'Xarope adulto',
-    status: 'Disponível',
+    status: 'Em falta',
     category: 'Expectorante'
   },
   {
@@ -96,7 +96,7 @@ export const medications: Medication[] = [
     name: 'Alprazolam',
     concentration: '0,5mg',
     form: 'Comprimido',
-    status: 'Recém-chegado',
+    status: 'Disponível',
     category: 'Ansiolítico'
   },
   {
@@ -131,14 +131,7 @@ export const medications: Medication[] = [
     status: 'Disponível',
     category: 'Diurético'
   },
-  {
-    id: '79',
-    name: 'Amilorida + hidroclorotiazida',
-    concentration: '5mg + 50mg',
-    form: 'Comprimido',
-    status: 'Em falta',
-    category: 'Diurético'
-  },
+
   {
     id: '80',
     name: 'Amiodarona',
@@ -290,7 +283,7 @@ export const medications: Medication[] = [
     name: 'Bromoprida',
     concentration: '10mg',
     form: 'Cápsula dura',
-    status: 'Recém-chegado',
+    status: 'Disponível',
     category: 'Antiemético'
   },
   {
@@ -298,7 +291,7 @@ export const medications: Medication[] = [
     name: 'Bromoprida',
     concentration: '4mg/ml',
     form: 'Solução oral em gotas',
-    status: 'Recém-chegado',
+    status: 'Disponível',
     category: 'Antiemético'
   },
   {
@@ -340,7 +333,7 @@ export const medications: Medication[] = [
     name: 'Carvedilol',
     concentration: '12,5mg',
     form: 'Comprimido',
-    status: 'Em falta',
+    status: 'Recém-chegado',
     category: 'Anti-hipertensivo'
   },
   {
@@ -476,7 +469,7 @@ export const medications: Medication[] = [
     name: 'Cloreto de Sódio',
     concentration: '0,9%',
     form: 'Solução nasal',
-    status: 'Recém-chegado',
+    status: 'Disponível',
     category: 'Descongestionante'
   },
   {
@@ -529,14 +522,7 @@ export const medications: Medication[] = [
     status: 'Disponível',
     category: 'Corticoide'
   },
-  {
-    id: '101',
-    name: 'Dexametasona',
-    concentration: '1mg/g',
-    form: 'Creme',
-    status: 'Em falta',
-    category: 'Corticoide'
-  },
+
   {
     id: '102',
     name: 'Dexclorfeniramina',
@@ -582,7 +568,7 @@ export const medications: Medication[] = [
     name: 'Diclofenaco potássico',
     concentration: '50mg',
     form: 'Comprimido revestido',
-    status: 'Recém-chegado',
+    status: 'Disponível',
     category: 'Anti-inflamatório'
   },
   {
@@ -606,7 +592,7 @@ export const medications: Medication[] = [
     name: 'Diltiazem',
     concentration: '60mg',
     form: 'Comprimido',
-    status: 'Recém-chegado',
+    status: 'Disponível',
     category: 'Anti-hipertensivo'
   },
   {
@@ -656,7 +642,7 @@ export const medications: Medication[] = [
     name: 'Enalapril',
     concentration: '20mg',
     form: 'Comprimido',
-    status: 'Recém-chegado',
+    status: 'Disponível',
     category: 'Anti-hipertensivo'
   },
   {
@@ -690,7 +676,7 @@ export const medications: Medication[] = [
     name: 'Fenobarbital',
     concentration: '100mg',
     form: 'Comprimido',
-    status: 'Disponível',
+    status: 'Em falta',
     category: 'Anticonvulsivante'
   },
   {
@@ -994,7 +980,7 @@ export const medications: Medication[] = [
     name: 'Lorazepam',
     concentration: '2mg',
     form: 'Comprimido',
-    status: 'Recém-chegado',
+    status: 'Disponível',
     category: 'Ansiolítico'
   },
   {
@@ -1028,7 +1014,7 @@ export const medications: Medication[] = [
     name: 'Metformina',
     concentration: '500mg',
     form: 'Comprimido revestido',
-    status: 'Recém-chegado',
+    status: 'Disponível',
     category: 'Antidiabético'
   },
   {
@@ -1044,7 +1030,7 @@ export const medications: Medication[] = [
     name: 'Metildopa',
     concentration: '250mg',
     form: 'Comprimido revestido',
-    status: 'Recém-chegado',
+    status: 'Em falta',
     category: 'Anti-hipertensivo'
   },
   {
@@ -1052,7 +1038,7 @@ export const medications: Medication[] = [
     name: 'Metildopa',
     concentration: '500mg',
     form: 'Comprimido revestido',
-    status: 'Recém-chegado',
+    status: 'Disponível',
     category: 'Anti-hipertensivo'
   },
   {
@@ -1071,14 +1057,7 @@ export const medications: Medication[] = [
     status: 'Disponível',
     category: 'Antiemético'
   },
-  {
-    id: '149',
-    name: 'Metoprolol (succinato)',
-    concentration: '25mg',
-    form: 'Comprimido revestido de liberação prolongada',
-    status: 'Em falta',
-    category: 'Anti-hipertensivo'
-  },
+
   {
     id: '150',
     name: 'Metoprolol (succinato)',
@@ -1306,7 +1285,7 @@ export const medications: Medication[] = [
     name: 'Prednisolona',
     concentration: '3mg/ml',
     form: 'Solução oral',
-    status: 'Em falta',
+    status: 'Recém-chegado',
     category: 'Corticoide'
   },
   {
@@ -1330,7 +1309,7 @@ export const medications: Medication[] = [
     name: 'Pregabalina',
     concentration: '75mg',
     form: 'Cápsula dura',
-    status: 'Recém-chegado',
+    status: 'Disponível',
     category: 'Anticonvulsivante'
   },
   {
@@ -1540,7 +1519,65 @@ export const medications: Medication[] = [
     form: 'Solução oral em gotas',
     status: 'Disponível',
     category: 'Vitamina'
+  },
+
+  // Medicamentos recém-chegados adicionados
+  {
+    id: '200',
+    name: 'Enalapril',
+    concentration: '10mg',
+    form: 'Comprimido',
+    status: 'Recém-chegado',
+    category: 'Anti-hipertensivo'
+  },
+  {
+    id: '201',
+    name: 'Acetilcisteína',
+    concentration: '600mg',
+    form: 'Envelope',
+    status: 'Recém-chegado',
+    category: 'Expectorante'
+  },
+  {
+    id: '202',
+    name: 'Ambroxol',
+    concentration: '15mg/5ml',
+    form: 'Xarope pediátrico',
+    status: 'Recém-chegado',
+    category: 'Expectorante'
+  },
+  {
+    id: '203',
+    name: 'Levotiroxina',
+    concentration: '50mg',
+    form: 'Comprimido',
+    status: 'Recém-chegado',
+    category: 'Hormônio da tireoide'
+  },
+  {
+    id: '204',
+    name: 'Levotiroxina',
+    concentration: '25mg',
+    form: 'Comprimido',
+    status: 'Recém-chegado',
+    category: 'Hormônio da tireoide'
+  },
+  {
+    id: '205',
+    name: 'Simeticona',
+    concentration: '40mg',
+    form: 'Comprimido',
+    status: 'Recém-chegado',
+    category: 'Antiflatulento'
+  },
+  {
+    id: '206',
+    name: 'Clonazepam',
+    concentration: '0,5mg',
+    form: 'Comprimido',
+    status: 'Recém-chegado',
+    category: 'Ansiolítico'
   }
 ];
 
-export const lastUpdated = '16/06/2025';
+export const lastUpdated = '30/06/2025';

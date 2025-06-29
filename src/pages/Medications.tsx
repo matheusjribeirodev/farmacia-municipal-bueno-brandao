@@ -34,7 +34,7 @@ const Medications = () => {
       const matchesCategory = categoryFilter === 'all' || med.category === categoryFilter;
       
       return matchesSearch && matchesStatus && matchesCategory;
-    });
+    }).sort((a, b) => a.name.localeCompare(b.name));
       }, [searchQuery, statusFilter, categoryFilter]);
 
   const downloadPDF = () => {
@@ -414,7 +414,7 @@ const Medications = () => {
                 </tr>
               </thead>
               <tbody>
-                ${medications.map(med => `
+                ${[...medications].sort((a, b) => a.name.localeCompare(b.name)).map(med => `
                   <tr>
                     <td class="med-name">${med.name}</td>
                     <td class="med-concentration">${med.concentration}</td>

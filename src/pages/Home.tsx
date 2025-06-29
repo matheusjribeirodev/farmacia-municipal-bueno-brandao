@@ -19,7 +19,7 @@ const Home = () => {
       const filtered = medications.filter(med =>
         med.name.toLowerCase().includes(query.toLowerCase()) ||
         med.category.toLowerCase().includes(query.toLowerCase())
-      );
+      ).sort((a, b) => a.name.localeCompare(b.name));
       setSearchResults(filtered);
     }
   };

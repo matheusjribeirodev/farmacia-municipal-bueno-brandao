@@ -21,8 +21,8 @@ const SearchBox = ({ onSearch, placeholder = "Digite o nome do medicamento..." }
         )
         .map(med => med.name);
       
-      // Remove duplicates and limit to 5 unique names
-      const uniqueNames = [...new Set(filtered)].slice(0, 5);
+      // Remove duplicates, sort alphabetically, and limit to 5 unique names
+      const uniqueNames = [...new Set(filtered)].sort((a, b) => a.localeCompare(b)).slice(0, 5);
       
       // Only show suggestions if we have results
       if (uniqueNames.length > 0) {
