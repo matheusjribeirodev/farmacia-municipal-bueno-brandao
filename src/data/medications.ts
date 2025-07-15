@@ -4,14 +4,6 @@ import { Medication } from '../types/medication';
 export const medications: Medication[] = [
   // A
   {
-    id: '66',
-    name: 'Acebrofilina',
-    concentration: '10mg/ml',
-    form: 'Xarope adulto',
-    status: 'Em falta',
-    category: 'Expectorante'
-  },
-  {
     id: '67',
     name: 'Aciclovir',
     concentration: '200mg',
@@ -672,14 +664,6 @@ export const medications: Medication[] = [
     category: 'Anticonvulsivante'
   },
   {
-    id: '45',
-    name: 'Fenobarbital',
-    concentration: '100mg',
-    form: 'Comprimido',
-    status: 'Em falta',
-    category: 'Anticonvulsivante'
-  },
-  {
     id: '46',
     name: 'Fenobarbital',
     concentration: '40mg/ml',
@@ -734,7 +718,7 @@ export const medications: Medication[] = [
     name: 'Gliclazida',
     concentration: '30mg',
     form: 'Cápsula dura de liberação prolongada',
-    status: 'Disponível',
+    status: 'Em falta',
     category: 'Antidiabético'
   },
   {
@@ -1024,14 +1008,6 @@ export const medications: Medication[] = [
     form: 'Comprimido revestido',
     status: 'Disponível',
     category: 'Antidiabético'
-  },
-  {
-    id: '145',
-    name: 'Metildopa',
-    concentration: '250mg',
-    form: 'Comprimido revestido',
-    status: 'Em falta',
-    category: 'Anti-hipertensivo'
   },
   {
     id: '146',
@@ -1459,7 +1435,7 @@ export const medications: Medication[] = [
     name: 'Tiamina',
     concentration: '300mg',
     form: 'Comprimido',
-    status: 'Disponível',
+    status: 'Em falta',
     category: 'Vitamina'
   },
   {
@@ -1521,7 +1497,7 @@ export const medications: Medication[] = [
     category: 'Vitamina'
   },
 
-  // Medicamentos recém-chegados adicionados
+  // Medicamentos recém-chegados anteriores mantidos
   {
     id: '200',
     name: 'Enalapril',
@@ -1577,7 +1553,25 @@ export const medications: Medication[] = [
     form: 'Comprimido',
     status: 'Recém-chegado',
     category: 'Ansiolítico'
+  },
+
+  // Novos medicamentos recém-chegados adicionados
+  {
+    id: '207',
+    name: 'Venlafaxina',
+    concentration: '75mg',
+    form: 'Cápsula dura',
+    status: 'Recém-chegado',
+    category: 'Antidepressivo'
+  },
+  {
+    id: '208',
+    name: 'Fenobarbital',
+    concentration: '100mg',
+    form: 'Comprimido',
+    status: 'Recém-chegado',
+    category: 'Anticonvulsivante'
   }
 ];
 
-export const lastUpdated = '30/06/2025';
+export const lastUpdated = '15/01/2025';
