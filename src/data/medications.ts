@@ -325,7 +325,7 @@ export const medications: Medication[] = [
     name: 'Carvedilol',
     concentration: '12,5mg',
     form: 'Comprimido',
-    status: 'Recém-chegado',
+    status: 'Disponível',
     category: 'Anti-hipertensivo'
   },
   {
@@ -1261,7 +1261,7 @@ export const medications: Medication[] = [
     name: 'Prednisolona',
     concentration: '3mg/ml',
     form: 'Solução oral',
-    status: 'Recém-chegado',
+    status: 'Disponível',
     category: 'Corticoide'
   },
   {
@@ -1497,13 +1497,13 @@ export const medications: Medication[] = [
     category: 'Vitamina'
   },
 
-  // Medicamentos recém-chegados anteriores mantidos
+  // Medicamentos anteriormente recém-chegados, agora disponíveis
   {
     id: '200',
     name: 'Enalapril',
     concentration: '10mg',
     form: 'Comprimido',
-    status: 'Recém-chegado',
+    status: 'Disponível',
     category: 'Anti-hipertensivo'
   },
   {
@@ -1511,7 +1511,7 @@ export const medications: Medication[] = [
     name: 'Acetilcisteína',
     concentration: '600mg',
     form: 'Envelope',
-    status: 'Recém-chegado',
+    status: 'Disponível',
     category: 'Expectorante'
   },
   {
@@ -1519,7 +1519,7 @@ export const medications: Medication[] = [
     name: 'Ambroxol',
     concentration: '15mg/5ml',
     form: 'Xarope pediátrico',
-    status: 'Recém-chegado',
+    status: 'Disponível',
     category: 'Expectorante'
   },
   {
@@ -1527,7 +1527,7 @@ export const medications: Medication[] = [
     name: 'Levotiroxina',
     concentration: '50mg',
     form: 'Comprimido',
-    status: 'Recém-chegado',
+    status: 'Disponível',
     category: 'Hormônio da tireoide'
   },
   {
@@ -1535,7 +1535,7 @@ export const medications: Medication[] = [
     name: 'Levotiroxina',
     concentration: '25mg',
     form: 'Comprimido',
-    status: 'Recém-chegado',
+    status: 'Disponível',
     category: 'Hormônio da tireoide'
   },
   {
@@ -1543,7 +1543,7 @@ export const medications: Medication[] = [
     name: 'Simeticona',
     concentration: '40mg',
     form: 'Comprimido',
-    status: 'Recém-chegado',
+    status: 'Disponível',
     category: 'Antiflatulento'
   },
   {
@@ -1551,17 +1551,17 @@ export const medications: Medication[] = [
     name: 'Clonazepam',
     concentration: '0,5mg',
     form: 'Comprimido',
-    status: 'Recém-chegado',
+    status: 'Disponível',
     category: 'Ansiolítico'
   },
 
-  // Novos medicamentos recém-chegados adicionados
+  // Novos medicamentos agora disponíveis
   {
     id: '207',
     name: 'Venlafaxina',
     concentration: '75mg',
     form: 'Cápsula dura',
-    status: 'Recém-chegado',
+    status: 'Disponível',
     category: 'Antidepressivo'
   },
   {
@@ -1569,9 +1569,9 @@ export const medications: Medication[] = [
     name: 'Fenobarbital',
     concentration: '100mg',
     form: 'Comprimido',
-    status: 'Recém-chegado',
+    status: 'Disponível',
     category: 'Anticonvulsivante'
   }
 ];
 
-export const lastUpdated = '15/01/2025';
+export const lastUpdated = '15/07/2025';
