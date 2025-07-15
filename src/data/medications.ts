@@ -1561,7 +1561,7 @@ export const medications: Medication[] = [
     name: 'Venlafaxina',
     concentration: '75mg',
     form: 'Cápsula dura',
-    status: 'Disponível',
+    status: 'Recém-chegado',
     category: 'Antidepressivo'
   },
   {
@@ -1569,7 +1569,7 @@ export const medications: Medication[] = [
     name: 'Fenobarbital',
     concentration: '100mg',
     form: 'Comprimido',
-    status: 'Disponível',
+    status: 'Recém-chegado',
     category: 'Anticonvulsivante'
   }
 ];
