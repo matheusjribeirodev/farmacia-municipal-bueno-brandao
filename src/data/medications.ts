@@ -1213,7 +1213,7 @@ export const medications: Medication[] = [
     name: 'Pantoprazol',
     concentration: '40mg',
     form: 'Comprimido revestido',
-    status: 'Disponível',
+    status: 'Em falta',
     category: 'Protetor gástrico'
   },
   {
