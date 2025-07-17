@@ -1571,6 +1571,22 @@ export const medications: Medication[] = [
     form: 'Comprimido',
     status: 'Recém-chegado',
     category: 'Anticonvulsivante'
+  },
+  {
+    id: '209',
+    name: 'Losartana',
+    concentration: '25mg',
+    form: 'Comprimido revestido',
+    status: 'Recém-chegado',
+    category: 'Anti-hipertensivo'
+  },
+  {
+    id: '210',
+    name: 'Risperidona',
+    concentration: '1mg',
+    form: 'Comprimido',
+    status: 'Recém-chegado',
+    category: 'Antipsicótico'
   }
 ];
 
