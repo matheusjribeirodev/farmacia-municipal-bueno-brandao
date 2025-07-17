@@ -1584,7 +1584,7 @@ export const medications: Medication[] = [
     id: '210',
     name: 'Risperidona',
     concentration: '1mg',
-    form: 'Comprimido',
+    form: 'Comprimido revestido',
     status: 'Recém-chegado',
     category: 'Antipsicótico'
   }
