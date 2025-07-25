@@ -88,7 +88,7 @@ export const medications: Medication[] = [
     name: 'Alprazolam',
     concentration: '0,5mg',
     form: 'Comprimido',
-    status: 'Disponível',
+    status: 'Em falta',
     category: 'Ansiolítico'
   },
   {
