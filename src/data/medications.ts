@@ -83,14 +83,7 @@ export const medications: Medication[] = [
     status: 'Disponível',
     category: 'Antigotoso'
   },
-  {
-    id: '25',
-    name: 'Alprazolam',
-    concentration: '0,5mg',
-    form: 'Comprimido',
-    status: 'Em falta',
-    category: 'Ansiolítico'
-  },
+
   {
     id: '26',
     name: 'Alprazolam',
@@ -421,7 +414,7 @@ export const medications: Medication[] = [
     name: 'Clobazam',
     concentration: '10mg',
     form: 'Comprimido',
-    status: 'Disponível',
+    status: 'Em falta',
     category: 'Ansiolítico'
   },
   {
@@ -713,14 +706,7 @@ export const medications: Medication[] = [
     status: 'Disponível',
     category: 'Antidiabético'
   },
-  {
-    id: '121',
-    name: 'Gliclazida',
-    concentration: '30mg',
-    form: 'Cápsula dura de liberação prolongada',
-    status: 'Em falta',
-    category: 'Antidiabético'
-  },
+
   {
     id: '122',
     name: 'Glimepirida',
@@ -768,7 +754,7 @@ export const medications: Medication[] = [
     name: 'Hidralazina',
     concentration: '50mg',
     form: 'Drágea',
-    status: 'Disponível',
+    status: 'Em falta',
     category: 'Anti-hipertensivo'
   },
   {
@@ -1208,14 +1194,7 @@ export const medications: Medication[] = [
   },
 
   // P
-  {
-    id: '160',
-    name: 'Pantoprazol',
-    concentration: '40mg',
-    form: 'Comprimido revestido',
-    status: 'Em falta',
-    category: 'Protetor gástrico'
-  },
+
   {
     id: '161',
     name: 'Paracetamol',
@@ -1430,14 +1409,7 @@ export const medications: Medication[] = [
   },
 
   // T
-  {
-    id: '180',
-    name: 'Tiamina',
-    concentration: '300mg',
-    form: 'Comprimido',
-    status: 'Em falta',
-    category: 'Vitamina'
-  },
+
   {
     id: '181',
     name: 'Timolol',
@@ -1561,7 +1533,7 @@ export const medications: Medication[] = [
     name: 'Venlafaxina',
     concentration: '75mg',
     form: 'Cápsula dura',
-    status: 'Recém-chegado',
+    status: 'Disponível',
     category: 'Antidepressivo'
   },
   {
@@ -1569,7 +1541,7 @@ export const medications: Medication[] = [
     name: 'Fenobarbital',
     concentration: '100mg',
     form: 'Comprimido',
-    status: 'Recém-chegado',
+    status: 'Disponível',
     category: 'Anticonvulsivante'
   },
   {
@@ -1577,7 +1549,7 @@ export const medications: Medication[] = [
     name: 'Losartana',
     concentration: '25mg',
     form: 'Comprimido revestido',
-    status: 'Recém-chegado',
+    status: 'Disponível',
     category: 'Anti-hipertensivo'
   },
   {
@@ -1585,9 +1557,27 @@ export const medications: Medication[] = [
     name: 'Risperidona',
     concentration: '1mg',
     form: 'Comprimido revestido',
-    status: 'Recém-chegado',
+    status: 'Disponível',
     category: 'Antipsicótico'
+  },
+
+  // Novos medicamentos recém-chegados
+  {
+    id: '211',
+    name: 'Pantoprazol',
+    concentration: '40mg',
+    form: 'Comprimido revestido',
+    status: 'Recém-chegado',
+    category: 'Protetor gástrico'
+  },
+  {
+    id: '212',
+    name: 'Dexametasona',
+    concentration: '1mg/g',
+    form: 'Creme',
+    status: 'Recém-chegado',
+    category: 'Corticoide'
   }
 ];
 
-export const lastUpdated = '15/07/2025';
+export const lastUpdated = '30/07/2025';
