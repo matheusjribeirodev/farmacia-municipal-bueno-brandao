@@ -854,7 +854,7 @@ export const medications: Medication[] = [
     name: 'Levofloxacino',
     concentration: '500mg',
     form: 'Comprimido revestido',
-    status: 'Disponível',
+    status: 'Em falta',
     category: 'Antibiótico'
   },
   {
